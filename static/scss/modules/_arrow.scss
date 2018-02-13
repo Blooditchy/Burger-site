@@ -1,0 +1,25 @@
+.hero__arrow {
+    position: absolute;
+    bottom: rem(40px);
+    width: rem(40px);
+    height: rem(40px);
+    left: 50%;
+    content: "";
+    @include tablets() {
+        bottom: rem(7px);
+    }
+}
+
+.down-arrow {
+    position: absolute;
+    display: block;
+    content: "";
+    width: rem(40px);
+    height: rem(40px);
+    background: url(../img/icon/arrow-scroll.svg) center center no-repeat;
+    transition: all .5s;
+    &:hover {
+        transform: translateY(-5px);
+        transition: all .5s;
+    }
+}

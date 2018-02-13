@@ -1,0 +1,51 @@
+.paginator {
+    position: fixed;
+    top: rem(90px);
+    right: rem(50px);
+    @include tablets {
+        display: none;
+    }
+}
+
+.paginator__item {
+    display: block;
+    margin-bottom: rem(10px);
+    position: relative;
+    width: rem(16px);
+    height: rem(16px);
+}
+
+.paginator__item.active .paginator__link:before {
+    display: block;
+    border: rem(1px) solid #fff;
+    border-radius: 50%;
+}
+
+.paginator__link {
+   &:after,
+   &:before {
+       display: block;
+       position: absolute;
+       content: '';
+       width: rem(16px);
+       height: rem(16px);
+       left: 50%;
+       top: 50%;
+       transform: translate(-50%, -50%);
+   }
+}
+
+.paginator__link:after {
+    display: block;
+    width: rem(6px);
+    height: rem(6px);
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.paginator__link:hover:before {
+    display: block;
+    border: rem(1px) solid #fff;
+    border-radius: 50%;
+    transition: .4s;
+}

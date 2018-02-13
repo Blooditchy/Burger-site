@@ -1,0 +1,211 @@
+.slider {
+  background: linear-gradient(to top,#F9B43B 20%, #EB8C38 50%, #F9B43B 75%);
+}
+
+.slider__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-top: rem(30px);
+    padding-bottom: rem(30px);
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: rem(70px);
+    }
+}
+
+//Стрелки===================
+.arrow-left {
+    position: absolute;
+    left: rem(-30px);
+}
+
+.arrow-right {
+    position: absolute;
+    right: rem(-30px);
+}
+
+.arrow-left__link-icon, .arrow-right__link-icon {
+    fill: #fff;
+    width: rem(27px);
+    height: rem(15px);
+}
+
+.arrow-left__link-icon {
+    transform: rotate(90deg);
+}
+
+.arrow-right__link-icon {
+    transform: rotate(-90deg);
+}
+
+//Левая часть слайдера===================
+.slider__left {
+    width: 50%;
+}
+
+.slider-pic {
+    width: 100%;
+    max-width: rem(500px);
+    max-height: rem(330px);
+}
+
+//Иконка состав бургера===================
+.slider__composition {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: rem(90px);
+    height: rem(90px);
+    background-color:#F08C33;
+    border-radius: rem(5px);
+    padding: rem(15px) rem(20px);
+    color: #fff;
+    font-family: 'Gagalin',Arial, Helvetica, sans-serif;
+    font-size: rem(14px);
+    text-align: center;
+    cursor: pointer;
+    &:hover .slider__composition-list {
+        padding: rem(20px) rem(20px);
+        transform: rotate(0);
+        transition: all .8s;
+        width: auto;
+        opacity: 1;
+    }
+    @include tablets {
+        left: 145px;
+        top: 0px;
+    }
+}
+
+.slider__composition:hover {
+    background: $red;
+}
+
+.slider__composition-icon {
+    fill: #fff;
+    width: rem(45px);
+    height: rem(45px);
+}
+
+//Выпадающий список иконки Состав===================
+.slider__composition-list {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: rem(90px);
+    border-radius: rem(5px);
+    background-color: rgba(#fff, .9);
+    color: #000;
+    width: 0;
+    opacity: 0;
+    padding: rem(20px) rem(0px);
+    overflow: hidden;
+    transition: all .8s;
+    transform: rotate(-90deg);
+    cursor: auto;
+}
+
+.slider__composition-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: rem(10px);
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.slider__composition-component {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: rem(70px);
+    text-align: left;
+    margin-right: rem(70px);
+    font-family: 'Ubuntumedium', Arial, Helvetica, sans-serif;
+}
+
+.slider__composition-weight {
+    white-space: nowrap;
+    text-align: right;
+    font-family: 'Ubuntulight', Arial, Helvetica, sans-serif;
+}
+
+.slider__composition-icon_size {
+    margin-right: rem(20px);
+    height: rem(40px);
+    width: rem(45px);
+}
+.slider__composition-icon_red {
+   fill: $red;
+}
+
+.slider__composition-icon_yellow {
+    fill: #F8B43A;
+}
+
+.slider__composition-icon_green {
+    fill: #8AC03E;
+}
+
+//иконка 1200kall===================
+
+
+//Правая часть слайдера===================
+.slider__right {
+    width: 50%;
+    @include tablets {
+        width: 100%;
+    }
+}
+
+.section-title_white {
+    color: #fff;
+    margin-bottom: rem(50px);
+    @include tablets {
+        text-align: center;
+        display: block;
+        white-space: normal;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+.slider__right-descr {
+    color: #fff;
+    font-family: 'Ubuntulight',Arial, Helvetica, sans-serif;
+    font-size: rem(14px);
+    margin-bottom: rem(30px);
+    line-height: 1.5;
+    @include tablets {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: rem(45px);
+        width: 80%;
+    }
+}
+
+.slider__right-prise {
+    @include tablets {
+        text-align: center;
+    }
+}
+
+.slider-prise_up, .slider-prise_sub {
+    font-family: 'Gagalin',Arial, Helvetica, sans-serif;
+    color: $red;
+}
+
+.slider-prise_up {
+    font-size: rem(72px);
+}
+
+.slider-prise_sub {
+    font-size: rem(30px);
+    margin-right: rem(30px);
+}
+

@@ -1,0 +1,221 @@
+.order {
+    background: url(../img/bg/bg-order.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.section-title_center {
+    text-align: center;
+    margin-bottom: rem(40px);
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.form__left-side {
+    width: 50%;
+    margin-right: rem(20px);
+    @include tablets {
+        margin-right: 0;
+        margin-bottom: rem(20px);
+        width: 80%;
+    }
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: rem(20px);
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form__block {
+    display: block;
+    margin-right: rem(20px);
+    flex: 1;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__title {
+    color: #fff;
+    font-family: 'Ubuntulight', Arial, Helvetica, sans-serif;
+    font-size: rem(14px);
+    cursor: pointer;
+}
+
+.form__input {
+    padding-bottom: rem(8px);
+    padding-top: rem(8px);
+    padding-left: rem(20px);
+    margin-top: rem(5px);
+    border: rem(2px) solid transparent;
+    border-radius: rem(5px);
+    width: 100%;
+    font-family: "Ubuntulight", Arial, Helvetica, sans-serif;
+    color: $dark;
+    font-size: rem(14px);
+        &:focus {
+            outline: none;
+        }
+}
+
+input.form__input {
+    &:focus {
+        border: rem(2px) solid $yellow;
+    }
+}
+
+.form__right-side {
+    width: 50%;
+    @include tablets {
+        width: 80%;
+    }
+}
+
+.form__comments {
+    width: 100%;
+    min-height: rem(110px);
+    margin-top: rem(5px);
+    border: none;
+    border-radius: rem(5px);
+    resize: none;
+        &:focus {
+            outline: none;
+        }
+}
+
+textarea.form__comments {
+    &:focus {
+        border: rem(2px) solid $yellow;
+    }
+}
+
+
+.form__block_reset {
+    max-width: rem(152px);
+}
+
+.radio, .check {
+    display: none;
+}
+
+.radio-custom {
+    width: rem(15px);
+    height: rem(15px);
+    border: rem(1px) solid #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    margin-right: rem(10px);
+}
+
+.radio-custom, .checked-custom, .form__title_reset {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+// .radio-custom {
+//     &::before {
+//         position: absolute;
+//         top: 3px;
+//         bottom: 3px;
+//         left: 3px;
+//         right: 3px;
+//         background-color: $red;
+//         content: "";
+//         border-radius: 50%;
+//         display: block;
+//     }
+// }
+
+.radio:checked + .radio-custom::before {
+    position: absolute;
+    top: rem(3px);
+    bottom: rem(3px);
+    left: rem(3px);
+    right: rem(3px);
+    background-color: $red;
+    content: "";
+    border-radius: 50%;
+    display: block;
+}
+
+.checked-custom {
+    width: rem(15px);
+    height: rem(15px);
+    display: inline-block;
+    margin-right: rem(10px);
+    border: 1px solid #fff;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.check:checked + .checked-custom:before {
+    position: absolute;
+    display: block;
+    content: "";
+    color: $red;
+    background-color: $red;
+    top: rem(5px);
+    bottom: rem(3px);
+    right: rem(3px);
+    left: rem(1px);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); 
+    width: rem(6px);
+    height: rem(3px);
+}
+
+.check:checked + .checked-custom:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: rem(10px);
+    height: rem(3px);
+    top: rem(5px);
+    right: rem(-1px);
+    background-color: $red;
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg);  
+}
+
+.btn_order {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: $red;
+    border-radius: rem(5px);
+    padding: rem(10px) rem(17px);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: rem(13px);
+    font-family: 'Ubuntumedium', Arial, Helvetica, sans-serif;
+    margin-right: rem(10px);
+    &:hover {
+      background-color: darken($red, 1.5%);  
+    } 
+}
+
+.btn_reset {
+    background: transparent;
+    cursor: pointer;
+    text-transform: none;
+    font-size: rem(14px);
+    font-family: 'Ubuntulight', Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+    color: #fff;
+}

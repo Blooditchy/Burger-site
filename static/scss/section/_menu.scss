@@ -1,0 +1,78 @@
+.menu {
+    background: url(../img/bg/bg-menu.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.section-title_white-position {
+    position: absolute;
+    left: rem(90px);
+    top: rem(110px);
+    color: #fff;
+    @include tablets {
+        left: rem(25px);
+        top: rem(115px);
+    }
+}
+
+.menu__acco-list {
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    color: #fff;
+    display: flex;
+}
+
+.menu__acco-item {
+    height: 100%;
+}
+
+.menu__acco-link {
+    position: relative;
+    display: block;
+    width: rem(80px);
+    height: 100%;
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.menu__acco-shadow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, .5);
+}
+
+.menu__acco-title {
+    position: absolute;
+    left: 25%;
+    top: 95%;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    color: #fff;
+    font-size: rem(40px);
+    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    transition: .3s;
+}
+
+.menu__acco-descr {
+    width: auto;
+    max-width: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.menu__acco-text {
+    background-color: rgba($dark, .93);
+    height: 100%;
+    width: auto;
+    font-family: 'Ubuntulight',Arial, Helvetica, sans-serif;
+    font-size: rem(14px);
+    padding: rem(35px) rem(30px);
+    line-height: 1.8;
+}
