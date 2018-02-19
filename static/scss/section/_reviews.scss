@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    width: 100%;
 }
 
 .reviews__item {
@@ -43,14 +42,18 @@
     @include tablets {
         padding: 2%;
     }
+    @include phones {
+        text-align: center;
+        padding-top: rem(60px);
+    }
 }
 
 .reviews__hover-title {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
     font-size: rem(14px);
     font-family: 'Gagalin', Arial, Helvetica, sans-serif;
     @include tablets {
-        margin-bottom: 10px;
+        margin-bottom: rem(10px);
     }
 }
 
@@ -59,4 +62,7 @@
     font-size: rem(14px);
     font-family: 'Ubuntulight';
     line-height: 1.5;
+    @include phones {
+        display: none;
+    }
 }

@@ -7,12 +7,19 @@
     height: rem(60px);
     background: #000 url(../img/bg/bg-footer.jpg) center center no-repeat;
     background-size: cover;
+    @include phones {
+        height: rem(115px);
+    }
 }
 
 .footer__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include phones {
+        display: inline-block;
+        text-align: center;
+    }
 }
 
 .footer__left-adress {
@@ -29,11 +36,24 @@
         font-size: rem(14px);
         font-family: 'Ubuntubold', Arial, Helvetica, sans-serif;
     }
+    @include phones {
+        margin-bottom: rem(10px);
+    }
+}
+
+.phone__icon {
+    width: rem(12px);
+    height: rem(11px);
+    fill: #e35028;
+    margin-right: rem(8px);
 }
 
 .social-btn {
     display: flex;
     align-items: center;
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .social-btn__item {

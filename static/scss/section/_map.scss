@@ -1,4 +1,10 @@
 .map {
-    background: url(../img/bg/bg-contacts.jpg) center center no-repeat;
-    background-size: cover;
+    // background: url(../img/bg/bg-contacts.jpg) center center no-repeat;
+    // background-size: cover;
+    position: relative;
 }
+
+#map {
+    height: 100%;
+    width: 100%;
+   }

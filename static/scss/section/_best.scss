@@ -4,7 +4,7 @@
 }
 
 .section-title {
-    &.section-title_black {
+    &.section-title_color_black {
         color: $dark;
         text-align: center;
         margin-bottom: rem(50px);
@@ -13,21 +13,44 @@
 
 .best__list {
     display: flex;
-    text-align: center;
     justify-content: space-between;
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .best__item {
     width: 31%;
+    @include phones {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: rem(40px);
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .best__item-pic {
     margin-bottom: rem(20px);
+    display: flex;
+    justify-content: center;
 }
 
 .best__icon {
     width: rem(100px);
-    height: rem(100px);
+    height: rem(90px);
+    @include phones {
+        margin-right: 10px;
+    }
+}
+
+.best__item-info {
+    text-align: center;
+    @include phones {
+        text-align: left;
+    }
 }
 
 .best__item-title {

@@ -20,7 +20,7 @@
 }
 
 .team__content {
-    width: 80%;
+    width: 70%;
     @include tablets() {
         display: flex;
         flex-direction: column;
@@ -38,6 +38,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 }
 
@@ -56,13 +57,18 @@
 
 .team__acco-item-active {
     .team__trigger {
+        transition: .3s;
         color: $yellow;
         &::before {
             transform: rotate(180deg);
+            transition: .3s;
         }
     }
     .team__acco-content {
-        height: auto;
+        height: rem(100px);
+        @include tablets {
+            height: rem(200px);
+        }
     }
 }
 
@@ -76,17 +82,21 @@
     font-weight: normal;
     font-size: rem(14px);
     &:before {
+        content: "";
         width: 0;
         height: 0;
         border: 6px solid transparent;
         border-bottom-width: 0;
         border-top-color: $yellow;
-        content: "";
         display: inline-block;
         margin-right: rem(10px);
+        transition: .3s;
     }
     @include tablets() {
         display: inline-block;
+    }
+    @include phones {
+        font-size: rem(25px);
     }
 }
 
@@ -94,6 +104,7 @@
     display: flex;
     margin-left: rem(15px);
     height: 0;
+    transition: .3s;
     overflow: hidden;
     @include tablets() {
         flex-direction: column;
@@ -109,15 +120,21 @@
 }
 
 .team__acco-pic {
-    width: rem(100px);
+    max-width: rem(100px);
     height: rem(100px);
     border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .team__acco-text {
     color: #fff;
     font-size: rem(14px);
     width: rem(210px);
+    @include tablets {
+        width: rem(340px);
+    }
 }
 
 .team__acco-title {

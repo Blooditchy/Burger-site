@@ -1,0 +1,28 @@
+.popup {
+    display: none;
+    max-width: 700px;
+}
+
+
+.popup__bottom {
+    display: flex;
+    justify-content: center;
+    padding-top: rem(20px);
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.popup__title {
+    font-family: 'Ubuntubold', Arial, Helvetica, sans-serif;
+    font-size: rem(18px);
+    text-align: center;
+    margin-bottom: rem(15px);
+}
+
+.popup__text {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+.fancybox-slide>* {
+    border-radius: 8px;
+}

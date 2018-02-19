@@ -16,7 +16,6 @@
 
 .menu__acco-list {
     position: absolute;
-    display: block;
     right: 0;
     bottom: 0;
     top: 0;
@@ -28,6 +27,13 @@
     height: 100%;
 }
 
+.menu__acco-item.menu__acco-item-active{
+    .menu__acco-descr  {
+        max-width: rem(700px);
+    }
+    
+}
+
 .menu__acco-link {
     position: relative;
     display: block;
@@ -37,7 +43,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
 }
 
 .menu__acco-shadow {
@@ -65,14 +70,15 @@
     max-width: 0;
     overflow: hidden;
     height: 100%;
+    transition: .3s;
+    background-color: rgba($dark, .93);
 }
 
 .menu__acco-text {
-    background-color: rgba($dark, .93);
-    height: 100%;
     width: auto;
+    height: 100%;
     font-family: 'Ubuntulight',Arial, Helvetica, sans-serif;
     font-size: rem(14px);
-    padding: rem(35px) rem(30px);
+    padding: rem(60px) rem(40px);
     line-height: 1.8;
 }

@@ -21,11 +21,17 @@
 .arrow-left {
     position: absolute;
     left: rem(-30px);
+    @include tablets {
+        left: 0;
+    }
 }
 
 .arrow-right {
     position: absolute;
     right: rem(-30px);
+    @include tablets {
+        right: 0;
+    }
 }
 
 .arrow-left__link-icon, .arrow-right__link-icon {
@@ -42,6 +48,9 @@
     transform: rotate(-90deg);
 }
 
+.slider {
+    display: flex;
+}
 //Левая часть слайдера===================
 .slider__left {
     width: 50%;
@@ -56,7 +65,7 @@
 //Иконка состав бургера===================
 .slider__composition {
     position: absolute;
-    top: 0;
+    top: -10%;
     left: 0;
     display: inline-block;
     width: rem(90px);
@@ -77,8 +86,11 @@
         opacity: 1;
     }
     @include tablets {
-        left: 145px;
+        left: rem(145px);
         top: 0px;
+    }
+    @include phones {
+        left: 0;
     }
 }
 
@@ -151,8 +163,47 @@
     fill: #8AC03E;
 }
 
-//иконка 1200kall===================
+//Иконка 1200kall===================
 
+.slider__calories {
+    position: absolute;
+    bottom: 0;
+    color: rgba(#fff, .5);
+    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
+    &:before {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: "1200";
+        display: inline-block;
+        font-size: rem(20px);
+    }
+    &:after {
+        position: absolute;
+        content: "ккал";
+        left: 50%;
+        transform: translate(-50%);
+        font-size: rem(14px);
+        display: inline-block;
+    }
+    @include tablets {
+        position: absolute;
+        right: rem(145px);
+        top: 0;
+        bottom: 91%;
+    }
+    @include phones {
+        right: 0;
+    }
+}
+
+.slider__calories-icon {
+    fill: rgba(#fff, .5);
+    width: rem(60px);
+    height: rem(60px);
+    
+}
 
 //Правая часть слайдера===================
 .slider__right {
@@ -164,6 +215,7 @@
 
 .section-title_white {
     color: #fff;
+    white-space: normal;
     margin-bottom: rem(50px);
     @include tablets {
         text-align: center;

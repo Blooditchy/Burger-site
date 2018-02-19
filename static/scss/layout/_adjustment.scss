@@ -7,11 +7,13 @@
 
 .maincontent {
     height: 100%;
-    min-height: rem(650px);
+    min-height: 650px;
+    transition: 1s;
+    transform: translate(0);
 }
 
 .section {
-    height: 100vh;
+    height: 100%;
     min-height: 650px;
     width: 100%;
     position: relative;
@@ -28,6 +30,9 @@
     justify-content: center;
     @include tablets {
         max-width: 720px;
+    }
+    @include phones {
+        max-width: 460px;
     }
 }
 
