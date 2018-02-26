@@ -119,101 +119,193 @@
 					</div>
 				</div>
 			</section>
-
-			<section class="section slider">
-				<div class="container">
-					<div class="slider__container">
-						<div class="slider__left">
+			<section class="section burgers">
+				<div class="container container__burgers">
+					<div class="slider">
+						<div class="slider__col slider__col-left">
+							<div class="slider__composition">
+								<svg class="slider__burger-icon" style="fill:#fff;">
+									<use xlink:href="/static/img/icon/sprite/sprite.svg#burger"></use>
+								</svg>
+							Состав
+							<div class="composition__hover">
+								<ul class="hover__list">
+									<li class="hover__item">
+										<svg class="hover__icon" style="fill:#e25028;">
+											<use  xlink:href="/static/img/icon/sprite/sprite.svg#beef"></use>
+										</svg>
+										<div class="hover__component">Говядина</div>
+										<div class="hover__weigth">300г</div>
+									</li>
+									<li class="hover__item">
+										<svg class="hover__icon" style="fill:#f8b43a;">
+											<use xlink:href="/static/img/icon/sprite/sprite.svg#buns"></use>
+										</svg>
+										<div class="hover__component">Булочки</div>
+										<div class="hover__weigth">100г</div>
+									</li>
+									<li class="hover__item">
+										<svg class="hover__icon" style="fill:#8ac03e;">
+											<use  xlink:href="/static/img/icon/sprite/sprite.svg#salad"></use>
+										</svg>
+										<div class="hover__component">Зелень</div>
+										<div class="hover__weigth">70г</div>
+									</li>
+									<li class="hover__item">
+										<svg class="hover__icon" style="fill:#e25028;">
+											<use xlink:href="/static/img/icon/sprite/sprite.svg#sauce"></use>
+										</svg>
+										<div class="hover__component">Соус</div>
+										<div class="hover__weigth">150г</div>
+									</li>
+									<li class="hover__item" <svg class="hover__icon" style="fill:#8ac03e;">
+										<svg class="hover__icon">
+											<use xlink:href="/static/img/icon/sprite/sprite.svg#cucumber"></use>
+										</svg>
+										<div class="hover__component">Овощи</div>
+										<div class="hover__weigth">200г</div>
+									</li>
+									<li class="hover__item">
+										<svg class="hover__icon" style="fill:#f8b43a;">
+											<use xlink:href="/static/img/icon/sprite/sprite.svg#cheese"></use>
+										</svg>
+										<div class="hover__component">Сыр</div>
+										<div class="hover__weigth">80г</div>
+									</li>
+								</ul>
+								<div class="hover__close"></div>
+							</div>
+							</div>
 							<div class="slider__display">
 								<ul class="slider__list">
+									<li class="slider__item active">
+										<div class="slider__pic-wrapper">
+											<img class="slider__pic" src="/static/img/slider/black_burger.png" alt="Бургер">
+										</div>
+									</li>
 									<li class="slider__item">
-										<img src="static/img/slider/slide1.png" alt="Бургер" class="slider-pic">
+										<div class="slider__pic-wrapper">
+											<img class="slider__pic" src="/static/img/slider/bacon_cheeseburger.png" alt="Бургер">
+										</div>
+									</li>
+									<li class="slider__item">
+										<div class="slider__pic-wrapper">
+											<img class="slider__pic" src="/static/img/slider/burger_sandwitch.png" alt="Бургер">
+										</div>
+									</li>
+									<li class="slider__item">
+										<div class="slider__pic-wrapper">
+											<img class="slider__pic" src="/static/img/slider/chicken_burger.png" alt="Бургер">
+										</div>
+									</li>
+									<li class="slider__item">
+										<div class="slider__pic-wrapper">
+											<img class="slider__pic" src="/static/img/slider/spicy_shrimp_burger.png" alt="Бургер">
+										</div>
 									</li>
 								</ul>
 							</div>
 							<div class="slider__calories">
-								<svg class="slider__calories-icon">
-									<use xlink:href="static/img/icon/sprite/sprite.svg#kkal"></use>
-								</svg>
-							</div>
-							<div class="slider__composition">
-								<svg class="slider__composition-icon">
-									<use xlink:href="static/img/icon/sprite/sprite.svg#burger"></use>
-								</svg>
-								<span>Состав</span>
-								<ul class="slider__composition-list">
-									<li class="slider__composition-item">
-										<svg class="slider__composition-icon slider__composition-icon_size slider__composition-icon_red">
-											<use xlink:href="static/img/icon/sprite/sprite.svg#beef"></use>
-										</svg>
-										<div class="slider__composition-component">Говядина</div>
-										<div class="slider__composition-weight">300 г</div>
-									</li>
-									<li class="slider__composition-item">
-										<svg class="slider__composition-icon slider__composition-icon_size slider__composition-icon_yellow">
-											<use xlink:href="static/img/icon/sprite/sprite.svg#buns"></use>
-										</svg>
-										<div class="slider__composition-component">Булочки</div>
-										<div class="slider__composition-weight">100 г</div>
-									</li>
-									<li class="slider__composition-item">
-										<svg class="slider__composition-icon slider__composition-icon_size slider__composition-icon_green">
-											<use xlink:href="static/img/icon/sprite/sprite.svg#salad"></use>
-										</svg>
-										<div class="slider__composition-component">Зелень</div>
-										<div class="slider__composition-weight">70 г</div>
-									</li>
-									<li class="slider__composition-item">
-										<svg class="slider__composition-icon slider__composition-icon_size slider__composition-icon_red">
-											<use xlink:href="static/img/icon/sprite/sprite.svg#sauce"></use>
-										</svg>
-										<div class="slider__composition-component">Соус</div>
-										<div class="slider__composition-weight">150 г</div>
-									</li>
-									<li class="slider__composition-item">
-										<svg class="slider__composition-icon slider__composition-icon_size slider__composition-icon_green">
-											<use xlink:href="static/img/icon/sprite/sprite.svg#cucumber"></use>
-										</svg>
-										<div class="slider__composition-component">Овощи</div>
-										<div class="slider__composition-weight">200 г</div>
-									</li>
-									<li class="slider__composition-item">
-										<svg class="slider__composition-icon slider__composition-icon_size slider__composition-icon_yellow">
-											<use xlink:href="static/img/icon/sprite/sprite.svg#cheese"></use>
-										</svg>
-										<div class="slider__composition-component">Сыр</div>
-										<div class="slider__composition-weight">80 г</div>
-									</li>
-								</ul>
+								<div class="slider__calories-picture">
+									<svg class="slider__calories-icon" style="fill:#fff;">
+										<use xlink:href="/static/img/icon/sprite/sprite.svg#kkal"></use>
+									</svg>
+									<span class="slider__calories-number">1200</span>
+								</div>
+								ккал
 							</div>
 						</div>
-						<div class="slider__right">
-							<div class="slider__right-descr">
-								<div class="section-title section-title_white">Dark beef burger</div>
-								<p>
-									Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
-								</p>
+						<div class="slider__col slider__col-right">
+							<ul class="desc__list">
+								<li class="desc__item active">
+									<div class="section-title section__title_white section__title_burgers">
+										Dark Beef Burger
+									</div>
+									<div class="slider__text">
+										<p>
+											Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами,
+											луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+										</p>
+									</div>
+								</li>
+								<li class="desc__item">
+									<div class="section-title section__title_white section__title_burgers">
+										NYC Bacon Cheeseburger
+									</div>
+									<div class="slider__text">
+										<p>
+											Живая легенда! Американская классика! Белая булочка с кунжутом, говяжья котлета, расплавленный сыр чеддер,
+											помидор, салат и двойная порция хрустящего поджаренного бекона не оставят вас равнодушным.
+										</p>
+									</div>
+								</li>
+								<li class="desc__item">
+									<div class="section-title section__title_white section__title_burgers">
+										Burger Sandwitch
+									</div>
+									<div class="slider__text">
+										<p>
+											Представляем вам новинку — Бургер-Сэндвич, вобравший в себя всё лучшее от своих родителей. Обжаренная в специях куриная грудка, фирменный белый соус, овощи, зелень и три полоски бекона-гриль.
+										</p>
+									</div>
+								</li>
+								<li class="desc__item">
+									<div class="section-title section__title_white section__title_burgers">
+										Chicken Burger
+									</div>
+									<div class="slider__text">
+										<p>
+											Старый друг лучше новых двух! Классический чикен бургер, с большой сочной куриной котлетой, свежим салатом-айсберг, помидором, луком и сыром. Все то, что вы неизменно любите! И ничего лишнего!
+										</p>
+									</div>
+								</li>
+								<li class="desc__item">
+									<div class="section-title section__title_white section__title_burgers">
+										Spicy Shrimp Burger
+									</div>
+									<div class="slider__text">
+										<p>
+											Для любителей морепродкутов и остренького! Королевские креветки в острой панировке, дальневосточные кальмары, фиолетовый лук, салат-айсберг, сыр чеддер, и всё это под фирменным тайским соусом с добавлением красного перца.
+										</p>
+									</div>
+								</li>
+							</ul>
+			
+							<div class="slider__bottom">
+								<div class="slider__price">
+									<ul class="price__list">
+										<li class="price__item active">
+											<span class="slider__price-number">500</span> рублей
+										</li>
+										<li class="price__item">
+											<span class="slider__price-number">400</span> рублей
+										</li>
+										<li class="price__item">
+											<span class="slider__price-number">450</span> рублей
+										</li>
+										<li class="price__item">
+											<span class="slider__price-number">350</span> рублей
+										</li>
+										<li class="price__item">
+											<span class="slider__price-number">490</span> рублей
+										</li>
+									</ul>
+								</div>
+								<a href="#" class="btn slider__button" data-scroll-to="6">
+									Заказать
+								</a>
 							</div>
-							<div class="slider__right-prise">
-								<span class="slider-prise_up">500</span>
-								<span class="slider-prise_sub">рублей</span>
-								<a href="#" class="btn" data-scroll-to="6">Заказать</a>
-							</div>
 						</div>
-						<div class="arrow-right">
-							<a href="" class="arrow-right__link">
-								<svg class="arrow-right__link-icon">
-									<use xlink:href="static/img/icon/sprite/sprite.svg#arrow-scroll"></use>
-								</svg>
-							</a>
-						</div>
-						<div class="arrow-left">
-							<a href="#" class="arrow-left__link">
-								<svg class="arrow-left__link-icon">
-									<use xlink:href="static/img/icon/sprite/sprite.svg#arrow-scroll"></use>
-								</svg>
-							</a>
-						</div>
+						<a class="slider__prev-arrow" href="#">
+							<svg class="next-screen-arrow__icon">
+								<use xlink:href="/static/img/icon/sprite/sprite.svg#arrow-scroll"></use>
+							</svg>
+						</a>
+						<a class="slider__next-arrow" href="#">
+							<svg class="next-screen-arrow__icon">
+								<use xlink:href="static/img/icon/sprite/sprite.svg#arrow-scroll"></use>
+							</svg>
+						</a>
 					</div>
 				</div>
 			</section>
@@ -421,42 +513,42 @@
 			<section class="section order">
 				<div class="container">
 					<div class="section-title section-title_center">Закажите доставку</div>
-					<form action="post" class="form">
+					<form action="server.php" class="form" method="post">
 						<div class="form__left-side">
 							<div class="form__row">
 								<label class="form__block">
 									<div class="form__title">Имя</div>
-									<input type="text" class="form__input" required="required">
+									<input type="text" class="form__input" required="required" name="user-name" id="user-name">
 								</label>
 								<label class="form__block">
 									<div class="form__title">Телефон</div>
-									<input type="text" class="form__input" required="required" placeholder="89995556677" id="phone">
+									<input type="text" class="form__input" required="required" placeholder="89995556677" id="phone" name="user-phone">
 								</label>
 							</div>
 
 							<div class="form__row">
 								<label class="form__block">
 									<div class="form__title">Улица</div>
-									<input type="text" class="form__input" required="required">
+									<input type="text" class="form__input" required="required" name="user-street">
 								</label>
 							</div>
 
 							<div class="form__row">
 								<label class="form__block">
 									<div class="form__title">Дом</div>
-									<input type="text" class="form__input" required="required">
+									<input type="text" class="form__input" required="required" name="user-house">
 								</label>
 								<label class="form__block">
 									<div class="form__title">Корпус</div>
-									<input type="text" class="form__input" required="required">
+									<input type="text" class="form__input" required="required" name="user-part">
 								</label>
 								<label class="form__block">
 									<div class="form__title">Квартира</div>
-									<input type="text" class="form__input" required="required">
+									<input type="text" class="form__input" required="required" name="user-aapt">
 								</label>
 								<label class="form__block">
 									<div class="form__title">Этаж</div>
-									<input type="text" class="form__input" required="required">
+									<input type="text" class="form__input" required="required" name="user-floor">
 								</label>
 							</div>
 						</div>
@@ -465,30 +557,30 @@
 							<div class="form__row">
 								<label class="form__block">
 									<div class="form__title">Комментарий</div>
-									<textarea class="form__comments"></textarea>
+									<textarea class="form__comments" name="message" id="message"></textarea>
 								</label>
 							</div>
 							<div class="form__row">
 								<label class="form__block form__block_reset">
-									<input type="radio" class="radio" name="pay">
+									<input type="radio" class="radio" name="pay" value="Наличными" id="pay">
 									<div class="radio-custom"></div>
 									<div class="form__title form__title_reset">Потребуется сдача</div>
 								</label>
 								<label class="form__block form__block_reset">
-									<input type="radio" class="radio" name="pay" checked="checked">
+									<input type="radio" class="radio" name="pay" checked="checked" value="Картой" id="pay">
 									<div class="radio-custom"></div>
 									<div class="form__title form__title_reset">Оплата картой</div>
 								</label>
 							</div>
 							<div class="form__row">
-								<label for="check" class="form__block form__block_reset">
-									<input type="checkbox" class="check" checked>
-									<div class="checked-custom"></div>
-									<div class="form__title form__title_reset">Не перезванивать</div>
+								<label class="form__block form__block_reset">
+									<input type="checkbox" class="check"  checked="checked" name="check-put">
+									<span class="checked-custom"></span>
+									<span class="form__title form__title_reset">Не перезванивать</span>
 								</label>
 							</div>
 							<div class="form__row">
-								<button class="btn_order">Заказать</button>
+								<button type="submit" class="btn_order">Заказать</button>
 								<button class="btn_reset" type="reset">Очистить</button>
 							</div>
 						</div>
@@ -601,8 +693,8 @@
 	</div>
 
 	<div class="popup" id="popup">
-		<div class="popup__title"></div>
-		<div class="popup__text"></div>
+		<div class="popup__title">Popup title</div>
+		<div class="popup__text">Popup text</div>
 		<div class="popup__bottom">
 			<a href="#" class="popup__close btn">Закрыть</a>
 		</div>
