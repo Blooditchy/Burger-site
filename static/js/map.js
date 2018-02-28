@@ -21,7 +21,7 @@ $(function () {
         myCollection = new ymaps.GeoObjectCollection({}, {
           draggable: false,
           iconLayout: 'default#image',
-          iconImageHref: '/static/img/icon/map-marker.svg',
+          iconImageHref: './static/img/icon/map-marker.svg',
           iconImageSize: [46, 57],
           iconImageOffset: [-26, -52]
         });
